@@ -1,8 +1,41 @@
+.legend-wrapper {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: 500;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.982));
+}
+
 #mapbox-legend {
   height: 20px;
   border-radius: 5px;
   width: 400px;
   max-width: 90svw;
+}
+
+#mapbox-legend::before {
+  content: attr(data-min);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+#mapbox-legend::after {
+  content: attr(data-max);
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 .gist_ncar {
