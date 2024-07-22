@@ -1,4 +1,4 @@
-export default config = {
+const config = {
   style: "mapbox://styles/solcast/clxjli2z6008h01pudwyx80kx",
   accessToken:
     "pk.eyJ1Ijoic29sY2FzdCIsImEiOiJjbHBrbmZybjUwMXhuMm5wZHZkYTl2cHgzIn0.JoR-him1ia9CPTHOTTNIXw",
