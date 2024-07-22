@@ -21,7 +21,7 @@ const config = {
   title: "Long Term Average Solar Rad",
   subtitle: "Subtitle",
   location: {
-      center: [0, 0],
+      center: [0, 1],
       projection: "globe",
       zoom: 1,
       minZoom: 1,
