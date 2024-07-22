@@ -1,3 +1,4 @@
+console.log("config loaded")
 const config = {
   style: "mapbox://styles/solcast/clxjli2z6008h01pudwyx80kx",
   accessToken:
