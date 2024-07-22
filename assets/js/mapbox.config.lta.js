@@ -6,8 +6,9 @@ const config = {
   showMarkers: true,
   markerColor: "#3FB1CE",
   showControls: false,
-  showLegend: false,
+  showLegend: true,
   legend: {
+    title: "GHI (Long-term average annual total, kWh/m<sup>2</sup>/yr)",
     color: "magma",
     min: 0,
     max: 308
