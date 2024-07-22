@@ -60,71 +60,7 @@ const config = {
         //     opacity: 0
         // }
       ],
-    },
-    {
-      id: "second-identifier",
-      alignment: "right",
-      hidden: false,
-      title: "Second Title",
-      image: "./path/to/image/source.png",
-      description: "Copy these sections to add to your story.",
-      location: {
-        center: [-77.020636, 38.8869],
-        zoom: 8.5,
-        pitch: 60,
-        bearing: -43.2,
-        // flyTo additional controls-
-        // These options control the flight curve, making it move
-        // slowly and zoom out almost completely before starting
-        // to pan.
-        //speed: 2, // make the flying slow
-        //curve: 1, // change the speed at which it zooms out
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: true,
-      callback: "",
-      onChapterEnter: [],
-      onChapterExit: [],
-    },
-    {
-      id: "third-identifier",
-      alignment: "left",
-      hidden: false,
-      title: "Third Title",
-      image: "./path/to/image/source.png",
-      description: "Copy these sections to add to your story.",
-      location: {
-        center: [6.15116, 46.20595],
-        zoom: 12.52,
-        pitch: 8.01,
-        bearing: 0.0,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [],
-      onChapterExit: [],
-    },
-    {
-      id: "fourth-chapter",
-      alignment: "fully",
-      hidden: false,
-      title: "Third Title",
-      image: "./path/to/image/source.png",
-      description: "Copy these sections to add to your story.",
-      location: {
-        center: [-58.54195, -34.716],
-        zoom: 4,
-        pitch: 0,
-        bearing: 0,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [],
-      onChapterExit: [],
-    },
-  ],
+    }],
   layers: [
     {
       id: "ocean_highres",
