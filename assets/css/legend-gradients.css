@@ -1,0 +1,84 @@
+#mapbox-legend {
+  height: 20px;
+  border-radius: 5px;
+  width: 400px;
+  max-width: 90svw;
+}
+
+.gist_ncar {
+    background: linear-gradient(
+    to right,
+    #000080,
+    #005c0d,
+    #0001ec,
+    #00baff,
+    #00f9f4,
+    #00fa9b,
+    #0aff0f,
+    #5fce00,
+    #7efa05,
+    #baff3b,
+    #f7fc07,
+    #ffdb00,
+    #ffba0e,
+    #ff4c01,
+    #ff0a00,
+    #ff00ec,
+    #a72cff,
+    #e77bef,
+    #f4baf6,
+    #fef8fe
+  );
+}
+
+.magma {
+  background: linear-gradient(
+    to right,
+    #000004,
+    #07061c,
+    #150e38,
+    #29115a,
+    #3f0f72,
+    #56147d,
+    #6a1c81,
+    #802582,
+    #942c80,
+    #ab337c,
+    #c03a76,
+    #d6456c,
+    #e85362,
+    #f4695c,
+    #fa815f,
+    #fd9b6b,
+    #feb47b,
+    #fecd90,
+    #fde5a7,
+    #fcfdbf
+    );
+}
+
+.nipy_spectral {
+  background: linear-gradient(
+    to right,
+    #000000,
+    #780089,
+    #7a009b,
+    #0000b2,
+    #0019dd,
+    #0080dd,
+    #009ecd,
+    #00aa9d,
+    #00a34f,
+    #00a900,
+    #00cd00,
+    #00f100,
+    #76ff00,
+    #def300,
+    #fbd500,
+    #ffa400,
+    #ff1800,
+    #e10000,
+    #cd0000,
+    #cccccc
+    );
+}
