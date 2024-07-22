@@ -7,6 +7,11 @@ const config = {
   markerColor: "#3FB1CE",
   showControls: false,
   showLegend: false,
+  legend: {
+    color: "magma",
+    min: 0,
+    max: 308
+  },
   showIconLegend: false,
   use3dTerrain: true,
   spinGlobe: true,
@@ -15,6 +20,15 @@ const config = {
   showStars: false,
   title: "Long Term Average Solar Rad",
   subtitle: "Subtitle",
+  location: {
+      center: [0, 0],
+      projection: "globe",
+      zoom: 1,
+      minZoom: 1,
+      maxZoom: 15,
+      pitch: 0,
+      bearing: 0,
+  },
   chapters: [
     {
       id: "slug-style-id",
