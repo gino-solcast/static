@@ -1,5 +1,4 @@
-console.log("config loaded")
-const config = {
+window.mapboxConfig = {
   style: "mapbox://styles/solcast/clxjli2z6008h01pudwyx80kx",
   accessToken:
     "pk.eyJ1Ijoic29sY2FzdCIsImEiOiJjbHBrbmZybjUwMXhuMm5wZHZkYTl2cHgzIn0.JoR-him1ia9CPTHOTTNIXw",
@@ -9,59 +8,31 @@ const config = {
   showLegend: true,
   legend: {
     title: "GHI (Long-term average annual total, kWh/m<sup>2</sup>/yr)",
-    color: "magma",
+    color: "gist_ncar",
     min: 0,
-    max: 308
+    max: 308,
   },
   showIconLegend: false,
   use3dTerrain: true,
   spinGlobe: true,
   secondsPerRotation: 180,
   maxSpinZoom: 2,
-  showStars: false,
+  showStars: true,
   title: "Long Term Average Solar Rad",
   subtitle: "Subtitle",
   location: {
-      center: [0, 1],
-      projection: "globe",
-      zoom: 1,
-      minZoom: 1,
-      maxZoom: 15,
-      pitch: 0,
-      bearing: 0,
+    center: [0, 1],
+    projection: "globe",
+    zoom: 1,
+    minZoom: 1,
+    maxZoom: 15,
+    pitch: 0,
+    bearing: 0,
   },
-  chapters: [
-    {
-      id: "slug-style-id",
-      alignment: "left",
-      hidden: false,
-      title: "Display Title",
-      image: "./path/to/image/source.png",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      location: {
-        center: [-122.418398, 37.759483],
-        zoom: 8.5,
-        pitch: 60,
-        bearing: 0,
-      },
-      mapAnimation: "flyTo",
-      rotateAnimation: false,
-      callback: "",
-      onChapterEnter: [
-        // {
-        //     layer: 'layer-name',
-        //     opacity: 1,
-        //     duration: 5000
-        // }
-      ],
-      onChapterExit: [
-        // {
-        //     layer: 'layer-name',
-        //     opacity: 0
-        // }
-      ],
-    }],
+  tileUrl:
+    "s3://solcast-visualisation-test/longterm-average-raw/long_term_avg.tif",
+  tileDataMeasurement: "kWh/m<sup>2</sup>/yr",
+  tileDataScalar: 8.76,
   layers: [
     {
       id: "ocean_highres",
@@ -110,27 +81,28 @@ const config = {
         "icon-opacity": 0.8,
       },
       minzoom: 2,
+      allowPopup: true,
     },
   ],
   icons: [
     {
-      url: "src/assets/validation_site.png",
+      url: "https://static.solcast.com/assets/icons/validation_site.png",
       id: "bankable",
       name: "Validation Sites",
       layer_id: "bankability",
     },
     {
-      url: "src/assets/unmetered_site.png",
+      url: "https://static.solcast.com/assets/icons/unmetered_site.png",
       id: "unmetered",
       name: "Unmetered Sites",
     },
     {
-      url: "src/assets/solar_site.png",
+      url: "https://static.solcast.com/assets/icons/solar_site.png",
       id: "utility",
       name: "Solar Sites",
     },
     {
-      url: "src/assets/lta_icon.png",
+      url: "https://static.solcast.com/assets/icons/lta_icon.png",
       id: "lta",
       name: "Long Term Average",
       layer_id: "long-term-avg",
